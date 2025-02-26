@@ -1,0 +1,20 @@
+#contens{
+    padding-left: 250px;
+}
+
+.color{
+    color: red;
+}
+
+#comment{
+    width: 50%;
+    height: 100px;
+}
+
+#buttn{
+    text-align: center;
+}
+
+#bn{
+    background-color: greenyellow;
+}
