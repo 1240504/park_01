@@ -1,13 +1,17 @@
 @charset "utf-8";
+
 #red{
     color: red;
     font-size: 130%;
 }
 #main{
    background-image: url(../image/main_img.jpg);
+   
 }
+
 .img{
     background: rgba(255,255,255,0.3);
+    
 }
 #box{
     border: 2px solid black;
@@ -15,11 +19,12 @@
 }
 #gaido ul li{
     list-style-type: square;
+    line-height: 3em;
     
 }
 #gaido{
    width: 300px;
-   padding-left: 510px;
+   margin: 0 auto;
 }
 #gaido ul{
     border: 2px red solid;
@@ -34,14 +39,30 @@
 }
 #gaido2{
     width: 300px;
-    padding-left: 510px;
+   margin: 0 auto;
 }
 #gaido2 ul{
     border: 2px red solid;
     background-color: rgb(241, 245, 248);;
     display: inline-block;
     padding: 40px;
+    line-height: 3em;
 }
 #gaido2 ul li{
     list-style-type: square;
 }
+@media screen and (max-width:768px){
+ nav ul{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+nav ul li{
+    width: 95vw;
+}
+header{
+    width: 100vw;
+}
+}
+

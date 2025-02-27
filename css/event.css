@@ -1,6 +1,4 @@
 @charset "utf-8";
-
-/* 基本レイアウト ここから↓ */
 header, nav, #path_arrow, #contents, footer #footer_box{
     width: 820px;
     margin-left: auto;
@@ -9,31 +7,33 @@ header, nav, #path_arrow, #contents, footer #footer_box{
 header img{
     max-width: 20%;
 }
+
 header h1{
     margin: 0;
     padding: 30px 0 30px 0;
     text-align: center;
 }
+
 nav ul{
     list-style-type: none;
     overflow: hidden;
 }
+
 nav ul li{
     width: 150px;
     border: 1px solid green;
     float: left;
-    font-weight: bold;
 }
+
 nav ul li a{
     display: block;
     padding: 15px 0;
-    color: black;
+    color: green;
     text-align: center;
     text-decoration: none;
-    color: green;
+    font-weight: bold;
 }
 nav ul li a:hover{
-    background-color: green;
     color: white;
 }
 #main img{
@@ -42,13 +42,12 @@ nav ul li a:hover{
     padding-left: 0;
 }
 #sub{
-    padding-left: 400px;
-    width: 650px;
- }
+    padding: 0px 100px 0px 100px;
+}
+
 #sub p{
     margin-top: 1.5em;
     padding: 0 0 1.5em 9.3em;
-    border-bottom: 1px dotted #666666;
     text-indent: -9.3em;
 }
 footer{
@@ -57,38 +56,61 @@ footer{
 footer #info{ 
     padding-left: 33%;
 }
+
 #pagetop{
     clear: both;
     text-align: right;
     margin-bottom: 20px; 
     padding: 10px 0;
 }
-/* 基本レイアウト ここまで↑ */
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-    #sub{
-        padding-left: 50px;
-    }
-
+/*イベントページのｃｓｓ*/ｃｓｓ*/
+#back_white{
+    border-bottom: solid 1px #cacaca;
 }
-@media screen and (max-width: 769px) {
-    #sub{
-        width: 95vw;
-        padding-left: 50px;
-    }
-    nav ul{
+#back_grey{
+    background-color: #CCFF99;
+}
+#head_right{
+    margin: auto;
+}
+mark{
+    background-color: greenyellow;
+    border-radius: 25px;
+}
+#sub h2{
+    text-align: center;
+    font-weight: 300;
+    border-bottom: solid 3px green;
+    position: relative;
+}
+ h2:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 3px #9ACD32;
+    bottom: -3px;
+    width: 50%;
+  }
+  nav ul li a:hover{
+    background-color: green;
+    color: white;
+  }
+  @media screen and (max-width:760px){                      /*スマートフォン用のｃｓｓ*/
+    ul{
         display: flex;
         flex-direction: column;
         padding-left: 0px;
+        
     }
     nav ul li{
-        width: 95vw;
+        width: 93vw;
     }
     header{
         width: 100vw;
     }
-    footer #info{
-        padding-left: 50px;
+    #sub{
+        padding: 0px 50px 0px 50px;
     }
-}
-
+    }
+    
+  /*ここまで*/

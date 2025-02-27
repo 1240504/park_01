@@ -1,6 +1,3 @@
-#form{
-    justify-content: center;
-}
 #contens{
     display: flex;
     justify-content: center;
@@ -35,6 +32,10 @@ h2:after {
 #bn{
     background-color: #CCFF99;
     border: 1px solid green;
+}
+
+#pg{
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
